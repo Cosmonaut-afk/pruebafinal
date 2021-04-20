@@ -38,15 +38,15 @@
     <div class="w3-container w3-display-container w3-padding-16">
       <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
       <div class="nav-brand">
-        <a href="index.html">
+        <a href="{{url_for('index')}}">
           <img src="/static/images/hibiscusSV.jpg" />
         </a>
       </div>
     </div>
     <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
       <a href="#Conocenos" class="w3-bar-item w3-button">Nosotros</a>
-      <a href="/templates/swimmwear.html" class="w3-bar-item w3-button">Swimmwear</a>
-      <a href="/templates/otros.html" class="w3-bar-item w3-button">Otros</a>
+      <a href="{{url_for('swimmwear')}}" class="w3-bar-item w3-button">Swimmwear</a>
+      <a href="{{url_for('otros')}}" class="w3-bar-item w3-button">Otros</a>
     </div>
     <a href="#footer" class="w3-bar-item w3-button w3-padding">Contáctanos</a>
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding"
@@ -73,10 +73,10 @@
     <!-- Encabezado superior -->
     <header class="w3-container w3-xlarge">
       <div class="nav">
-        <a href="/templates/index.html" target="_blank">Hibiscus El Salvador</a>
+        <a href="{{url_for('index')}}" target="_blank">Hibiscus El Salvador</a>
         <div id="headerM">
           <p class="w3-right">
-            <a href="/templates/cart.html" target="_blank"><i class="fa fa-shopping-cart w3-margin-right"></i></a>
+            <a href="/{{url_for('cart')}}" target="_blank"><i class="fa fa-shopping-cart w3-margin-right"></i></a>
             <a href="{{url_for('login')}}">Login</a>
           </p>
         </div>
